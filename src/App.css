@@ -1,0 +1,37 @@
+body{
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+
+  
+}
+.App{
+  min-height: 100vh;
+  background-image: linear-gradient(to top, #5ee7df 0%, #b490ca 100%);
+}
+
+#todo-container, form{
+  text-align: center;
+  margin-top: 50px;
+  transition:  all 0.5s ease;
+}
+.todo{
+  
+  transition:  all 0.5s ease;
+  background-color: rgb(168, 208, 245);
+  margin: 0.5rem;
+
+}
+
+.isCompleted{
+  text-decoration: line-through;
+  opacity: 0.5;
+}
+.trash-btn{
+  pointer-events: none;
+}
+
+.fall{
+  transform: translateY(8rem) rotateZ(20deg);
+  opacity: 0;
+}

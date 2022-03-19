@@ -3,11 +3,15 @@ import Form from './components/form';
 import TodoList from './components/todoList';
 import './App.css';
 function App() {
+  //STATES
+
   const[inputText, setInputText] = useState('')
   const[todos, setTodos] = useState([])
   const[status, setStatus] = useState("all")
   const [filteredTodos, setFilteredTodos] = useState([])
-//FUNCTIONS
+
+//USE EFFECT
+
 useEffect(() => {
 getLocalTodos()
 }, [])
@@ -15,6 +19,8 @@ useEffect(() => {
   filterHandler()
   saveLocalTodos()
 }, [status, todos])
+
+//FUNCTIONS
 
 const filterHandler = (e) => {
   switch (status) {
@@ -47,7 +53,7 @@ const getLocalTodos = () => {
   return (
     <div className="App">
       <header>
-        <h1>Tolu's Todo List</h1>
+        <h1>Today's tasks</h1>
      
       </header>
       <Form inputText={inputText}

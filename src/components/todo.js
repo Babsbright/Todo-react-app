@@ -19,8 +19,9 @@ setTodos(
     return (
 <div className="todo">
   <li className={`todo-item ${todo.isCompleted ? "completed" : ""}`}>{text}</li>
-  <button onClick={completeHandler} className="complete-button">C</button>
-  <button onClick={deleteHandler} className="trash-button">T</button>
+  <button onClick={completeHandler} className="complete-button"><i class ='fas fa-check'></i></button>
+  <button onClick={deleteHandler} className="trash-button"><i class= 'fas fa-trash'></i></button>
+
 </div>
     )
 }

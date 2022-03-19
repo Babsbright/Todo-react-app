@@ -21,17 +21,15 @@ return(
     <form action="">
       
     <input value={inputText} onChange={textHandler} className="todo-input" type="text"/>
-    <button onClick={submitHandler} className="todo-button"><i className="fas fa-user"></i> add</button>
+    <button onClick={submitHandler} className="todo-button"><i className="fas fa-plus"></i></button>
    <div className="select">
     <select
     
     onChange={statusHandler}
     name="todos" className="filter-todo">
-
-
         <option value="all">All</option>
-        <option value="completed">completed</option>
-        <option value="uncompleted">uncompleted</option>
+        <option value="completed">Completed</option>
+        <option value="uncompleted">Uncompleted</option>
    
    
        </select>

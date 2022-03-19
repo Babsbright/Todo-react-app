@@ -11,9 +11,9 @@ body {
   font-family: 'Comic Neue', cursive;
 }
 .App{
-min-height:90vh;
+min-height:80vh;
 background-color:#52b788;
-margin: 30px 40px 40px 40px;
+margin: 40px 40px 40px 40px;
 border-radius:20px;
 }
 header h1 {

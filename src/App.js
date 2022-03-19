@@ -67,6 +67,7 @@ const getLocalTodos = () => {
        setTodos = {setTodos}
        filteredTodos = {filteredTodos}
        />
+       
     </div>
   );
 }

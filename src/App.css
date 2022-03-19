@@ -11,7 +11,7 @@ body {
   font-family: 'Comic Neue', cursive;
 }
 .App{
-min-height:100vh;
+min-height:90vh;
 background-color:#52b788;
 margin: 30px 40px 40px 40px;
 border-radius:20px;
@@ -157,7 +157,7 @@ select {
   content: "\25BC";
   position: absolute;
   font-size: 0.9rem;
-  top: -7px;
+  top: -9px;
   right: 0;
   padding: 1rem;
   background:#1b4332;

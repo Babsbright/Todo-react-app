@@ -5,6 +5,10 @@ body{
 
   
 }
+/* .hello{
+  font-size: 20px;
+  corect one
+} */
 .App{
   min-height: 100vh;
   background-image: linear-gradient(to top, #5ee7df 0%, #b490ca 100%);

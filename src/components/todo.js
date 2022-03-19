@@ -8,7 +8,7 @@ setTodos(
 
     const completeHandler = () => {
         setTodos(todos.map((item) => {
-            if (item.id === todo.id) {
+            if (item.key === todo.key) {
                 return{
                     ...item, isCompleted : !item.isCompleted
                 }
@@ -18,7 +18,7 @@ setTodos(
     }
     return (
 <div className="todo">
-  <li className="todo-item">{text}</li>
+  <li className={`todo-item ${todo.isCompleted ? "completed" : ""}`}>{text}</li>
   <button onClick={completeHandler} className="complete-button">C</button>
   <button onClick={deleteHandler} className="trash-button">T</button>
 </div>

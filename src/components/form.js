@@ -1,6 +1,6 @@
-import React, {useState} from 'react'
+import React from 'react'
 
-const Form = ({inputText, setInputText, todos, setTodos}) => {
+const Form = ({inputText, setStatus, setInputText, todos, setTodos}) => {
     
 
     const textHandler = (e) => {
@@ -13,14 +13,19 @@ const Form = ({inputText, setInputText, todos, setTodos}) => {
         ])
         setInputText('')
     }
+
+    const statusHandler = (e) => {
+        setStatus(e.target.value)
+    }
 return(
     <form action="">
+      
     <input value={inputText} onChange={textHandler} className="todo-input" type="text"/>
     <button onClick={submitHandler} className="todo-button"><i className="fas fa-user"></i> add</button>
    <div className="select">
     <select
     
-    
+    onChange={statusHandler}
     name="todos" className="filter-todo">
 
 
